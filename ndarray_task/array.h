@@ -24,7 +24,7 @@ public:
 	Array& operator *=(const T n);
 	Array& operator /=(const T n);
 
-	Array transposition(const Array* matr);
+	void transposition();
 };
 
 template <class T>Array<T>::Array(int startCapacity) {

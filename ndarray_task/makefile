@@ -1,6 +1,6 @@
 CC = g++
 CFLAGS = -std=c++11 -Wall -pedantic
-SOURCES = testMap.h
+SOURCES = myArray.cpp
 
 ifeq ($(OS), Windows_NT)
 	RM = del

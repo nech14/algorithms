@@ -23,7 +23,7 @@ int main()
     
     b.fillOrder(); 
     b1.fillOrder();
-    b1.fillRandom();
+    //b1.fillRandom();
     
 
     Array<int> b2;

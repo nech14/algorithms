@@ -71,7 +71,6 @@ template <class T> T* Array<T>::min(int n) {
 		throw ArrayException();
 
 	T* minimum = new T[sizeArray[dimension - n - 1]];
-	int* buf = new int[dimension];
 	for (int m = 0; m < sizeArray[dimension - n - 1]; m++) {
 		minimum[m] = arr[m * n * sizeArray[1] + n + (dimension - n - 1) * sizeArray[1] + m * (dimension - n - 1)];
 		for (int i = 0; i < sizeArray[0]; i++) {
@@ -105,7 +104,6 @@ template <class T> T* Array<T>::max(int n) {
 		throw ArrayException();
 
 	T* maximum = new T[sizeArray[dimension - n - 1]];
-	int* buf = new int[dimension];
 	for (int m = 0; m < sizeArray[dimension - n - 1]; m++) {
 		maximum[m] = arr[m * n * sizeArray[1] + n + (dimension - n - 1) * sizeArray[1] + m * (dimension - n - 1)];
 		for (int i = 0; i < sizeArray[0]; i++) {
@@ -138,7 +136,6 @@ template <class T> T* Array<T>::mean(int n) {
 		throw ArrayException();
 
 	T* medium = new T[sizeArray[dimension - n - 1]];
-	int* buf = new int[dimension];
 	for (int m = 0; m < sizeArray[dimension - n - 1]; m++) {
 		medium[m] = 0;
 		for (int i = 0; i < sizeArray[0]; i++) {

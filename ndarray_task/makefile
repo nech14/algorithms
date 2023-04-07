@@ -21,4 +21,9 @@ clean:
 
 
 run: all
+
+ifeq ($(OS), Windows_NT)
 	.\$(TARGET)
+else
+	./$(TARGET)
+endif

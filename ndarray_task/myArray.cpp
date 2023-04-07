@@ -3,7 +3,7 @@
 #include <iostream>
 #include <typeinfo>
 #include <locale.h>
-#include "Array.h"
+#include "array.h"
 
 template <class T> void test_mean(int mode, Array<T> b);
 template <class T> void test_mean(Array<T> b);

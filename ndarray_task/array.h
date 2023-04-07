@@ -199,7 +199,8 @@ template <class T>Array<T>::Array(const Array<T>& n) : Array(n.dimension, n.size
 
 template <class T>Array<T>::~Array() {
 
-	delete[] arr, sizeArray;
+	delete[] arr;
+	delete[] sizeArray;
 
 }
 
